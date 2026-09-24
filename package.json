@@ -1,0 +1,15 @@
+{
+  "name": "laundry-night",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A creepy educational laundry-shuffle browser game.",
+  "scripts": {
+    "serve": "python3 -m http.server 4173 --bind 127.0.0.1",
+    "test": "playwright test",
+    "screenshots": "playwright test tests/screenshots.spec.js",
+    "serve:test": "node server.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  }
+}
